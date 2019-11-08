@@ -32,8 +32,24 @@
 
 
 
+.contact-info{
+    display: flex;
+    justify-content: center;
+}
 
+
+
+
+
+
+
+
+
+
+
+/*switch styles*/
 .label-switch {
+    margin-left: 10px;
     display: inline-flex;
     align-items: center;
     margin-bottom: 1rem;

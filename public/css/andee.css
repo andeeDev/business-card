@@ -1,0 +1,22 @@
+.on-off:after {
+    content: "";
+    top: -10px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-image: url("../images/switch.svg");
+    background-size: cover;
+}
+.switch-wrapper {
+    position: relative;
+}
+/*
+h5 .h-icons__eye {
+    display: block;
+    line-height: 24px;
+    height: 24px;
+    position: absolute;
+    top: 100%;
+    right: 1.78125rem;
+    margin-top: -12px;
+}*/

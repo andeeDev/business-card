@@ -44,19 +44,25 @@
                 </div>
             </div>
             <section id="top-blocks" class="row" data-equalizer>
-                <section class="large-6 xmedium-6  column">
+                <section id="user" class="large-6 xmedium-6  column">
                     <article class="callout margin-info-xmedium" data-equalizer-watch style="height: 276px;">
                         <div class="orbit flex-column" data-orbit data-options="autoPlay:false;">
                             <h5 class="callout small clearfix cabinet margins two-icon">
-                                Інформація
+                                Візитка
                                 <button class="orbit-previous" tabindex="0"><span class="show-for-sr">Previous Slide</span><img src="public/images/left-arrow-24.png" height="24" width="24" alt="Попередній"></button>
                                 <button class="orbit-next" tabindex="0"><span class="show-for-sr">Next Slide</span><img src="public/images/right-arrow-24.png" height="24" width="24" alt="Наступний"></button>
                             </h5>
                             <ul class="orbit-container flex-h100 column text-center" tabindex="0">
                                 <li class="orbit-slide is-active flex-h100 flex-valign-middle" data-slide="0" >
-                                    <table>
-                                        <tr><td>Підрозділ</td><td>Кафедра комп`ютерних наук</td></tr>
-                                        <tr><td>Посада</td><td>Асистент кафедри комп'ютерних наук (секція ІКТ)</td></tr>
+                                    <table class="m-b-n stack-lsmall bg-none b-none p01 l-h-1-2 text-left">
+                                        <colgroup>
+                                            <col width="120px">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr><th>Підрозділ</th><td>Кафедра комп`ютерних наук</td></tr>
+                                            <tr><th>Посада</th><td>Асистент кафедри комп'ютерних наук (секція ІКТ)</td></tr>
+                                        </tbody>
                                     </table>
                                     <!--<p class="small-10 size-12 fw-bold margin-bottom-none">
                                         Асистент кафедри комп'ютерних наук (секція ІКТ)
@@ -76,12 +82,19 @@
                                     </label>
                                 </li>
                                 <li class="orbit-slide flex-h100 flex-valign-middle" data-slide="1" >
-                                    <table>
-                                        <tr><td></td></tr>
+                                    <table class="m-b-n stack-lsmall bg-none b-none p01 l-h-1-2 text-left">
+                                        <colgroup>
+                                            <col width="120px">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr><th>Підрозділ</th><td>Центр інформаційних систем</td></tr>
+                                            <tr><th>Посада</th><td>Завідуючий навчально-методичною лабораторією електронного документообігу та інформаційних сервісів</td></tr>
+                                        </tbody>
                                     </table>
-                                    <p class="small-10 size-12 fw-bold margin-bottom-none">
+                                    <!--<p class="small-10 size-12 fw-bold margin-bottom-none">
                                         Завідуючий навчально-методичною лабораторією електронного документообігу та інформаційних сервісів
-                                    </p>
+                                    </p>-->
                                     <div class="cabinet radio star" style="margin-left:5px;">
                                         <input id="post2" type="radio" name="posts">
                                         <label for="post2"></label>
@@ -204,7 +217,7 @@
 
         <script src="https://cabinet.sumdu.edu.ua/public/js/foundation.min.js" type="text/javascript"></script>
         <script src="https://cabinet.sumdu.edu.ua/public/js/what-input.min.js"></script>
-        <script src="https://cabinet.sumdu.edu.ua/public/js/cabinet.utils.min.js"></script>
+        <script src="https://cabinet.sumdu.edu.ua/public/js/cabinet.utils.js"></script>
         <script>
             (function() {
                 $('#cv').ckeditor({
@@ -217,6 +230,7 @@
                     }
                 });
                 utils.onMessageStickyStuck();
+                //utils.onResizeUserBlock();
             }());
         </script>
     </body>

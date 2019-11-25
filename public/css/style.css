@@ -61,7 +61,7 @@
 
 .checkbox-radio.padlock input:checked + label:before {
     content:'t';
-    text-indent: -1000px;
+    text-indent: -10000px;
     background: url('../images/open-padlock.svg') center center no-repeat;
     background-size: 24px 24px;
 }

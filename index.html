@@ -44,7 +44,7 @@
                 </div>
             </div>
             <section id="top-blocks" class="row" data-equalizer>
-                <section id="user" class="large-6 xmedium-6  column">
+                <section id="user" class="large-6 xmedium-6  column bcard">
                     <article class="callout margin-info-xmedium" data-equalizer-watch style="height: 276px;">
                         <div class="orbit flex-column" data-orbit data-options="autoPlay:false;">
                             <h5 class="callout small clearfix cabinet margins two-icon">
@@ -54,9 +54,9 @@
                             </h5>
                             <ul class="orbit-container flex-h100 column text-center" tabindex="0">
                                 <li class="orbit-slide is-active flex-h100 flex-valign-middle" data-slide="0" >
-                                    <table class="m-b-n stack-lsmall bg-none b-none p01 l-h-1-2 text-left">
+                                    <table class="m-b-n stack-lsmall bg-none b-none p01 l-h-1-2 text-left" style="border:dashed 1px black !important;">
                                         <colgroup>
-                                            <col width="120px">
+                                            <col width="80px">
                                             <col>
                                         </colgroup>
                                         <tbody>
@@ -67,11 +67,17 @@
                                     <!--<p class="small-10 size-12 fw-bold margin-bottom-none">
                                         Асистент кафедри комп'ютерних наук (секція ІКТ)
                                     </p>-->
-                                    <div class="cabinet radio star" style="margin-left:5px;">
-                                        <input id="post1" type="radio" name="posts" checked>
-                                        <label for="post1"></label>
-                                    </div>
-                                    <label class="label-switch  m-l">
+                                    <div class="controls">
+                                        <div class="checkbox-radio star" style="margin-left:5px;">
+                                            <input id="post1" type="radio" name="posts" checked>
+                                            <label for="post1"></label>
+                                        </div>
+                                        <div class="checkbox-radio padlock" style="margin-left:5px;">
+                                            <input id="lock-post1" type="checkbox" name="post-lock" checked>
+                                            <label for="lock-post1"></label>
+                                        </div>
+
+                                        <!--<label class="label-switch  m-l">
                                         <div class="toggle">
                                             <input class="toggle-state" type="checkbox" name="check" value="check" />
                                             <div class="toggle-inner">
@@ -79,12 +85,13 @@
                                             </div>
                                             <div class="active-bg"></div>
                                         </div>
-                                    </label>
+                                    </label>-->
+                                    </div>
                                 </li>
                                 <li class="orbit-slide flex-h100 flex-valign-middle" data-slide="1" >
                                     <table class="m-b-n stack-lsmall bg-none b-none p01 l-h-1-2 text-left">
                                         <colgroup>
-                                            <col width="120px">
+                                            <col width="80px">
                                             <col>
                                         </colgroup>
                                         <tbody>
@@ -95,11 +102,17 @@
                                     <!--<p class="small-10 size-12 fw-bold margin-bottom-none">
                                         Завідуючий навчально-методичною лабораторією електронного документообігу та інформаційних сервісів
                                     </p>-->
-                                    <div class="cabinet radio star" style="margin-left:5px;">
-                                        <input id="post2" type="radio" name="posts">
-                                        <label for="post2"></label>
-                                    </div>
-                                    <label class="label-switch  m-l">
+                                    <div class="controls">
+                                        <div class="checkbox-radio star" style="margin-left:5px;">
+                                            <input id="post2" type="radio" name="posts">
+                                            <label for="post2"></label>
+                                        </div>
+                                        <div class="checkbox-radio padlock" style="margin-left:5px;">
+                                            <input id="lock-post2" type="checkbox" name="post-lock">
+                                            <label for="lock-post2"></label>
+                                        </div>
+
+                                        <!--<label class="label-switch  m-l">
                                         <div class="toggle">
                                             <input class="toggle-state" type="checkbox" name="check" value="check" />
                                             <div class="toggle-inner">
@@ -107,13 +120,25 @@
                                             </div>
                                             <div class="active-bg"></div>
                                         </div>
-                                    </label>
+                                    </label>-->
+                                    </div>
                                 </li>
                             </ul>
                             <div class="phone column m-b">
-                                <p class="text-center size-12 fw-bold margin-bottom-none">
+                                <table class="m-b-n stack-lsmall bg-none p01 l-h-1-2 text-left b-none" style="border:dashed 1px black !important;">
+                                    <colgroup>
+                                        <col width="80"/>
+                                        <col>
+                                    </colgroup>
+                                    <tr><th>Телефон</th><td>+38-888-888-88-88</td></tr>
+                                </table>
+                                <!--<p class="text-center size-12 fw-bold margin-bottom-none">
                                     Контактний телефон: +38-888-888-88-88
-                                </p>
+                                </p>-->
+                                <!--<div class="checkbox-radio padlock" style="margin-left:5px;">
+                                    <input id="lock-phone" type="checkbox" name="lock-phone" checked>
+                                    <label for="lock-phone"></label>
+                                </div>-->
                                 <label class="label-switch m-l">
                                     <div class="toggle">
                                         <input class="toggle-state" type="checkbox" name="check" value="check" />
@@ -142,7 +167,11 @@
                                     <div id="person-photo">
                                         <img src="public/images/getphoto.jpg" height="128" width="128" alt="Фотографія">
                                         <div class="on-off">
-                                            <label class="label-switch">
+                                            <div class="checkbox-radio padlock" style="margin-left:3px; margin-top:2px;">
+                                                <input id="lock-photo" type="checkbox" name="photo-lock" checked>
+                                                <label for="lock-photo"></label>
+                                            </div>
+                                            <!--<label class="label-switch">
                                                 <div class="toggle">
                                                     <input class="toggle-state" type="checkbox" name="check" value="check" />
                                                     <div class="toggle-inner">
@@ -150,7 +179,7 @@
                                                     </div>
                                                     <div class="active-bg"></div>
                                                 </div>
-                                            </label>
+                                            </label>-->
                                         </div>
                                     </div>
                                 </div>
